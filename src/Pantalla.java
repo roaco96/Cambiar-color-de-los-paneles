@@ -142,34 +142,58 @@ public class Pantalla extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Pone el color del panel verde
+     * @param evt 
+     */
     private void rbVerdeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbVerdeActionPerformed
         
         g.setColor(Color.green);
         g.fillRect(0,0,this.getWidth(),this.getHeight());
     }//GEN-LAST:event_rbVerdeActionPerformed
 
+    /**
+     * Pone el color del panel rojo
+     * @param evt 
+     */
     private void rbRojoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbRojoActionPerformed
         g.setColor(Color.red);
         g.fillRect(0,0,this.getWidth(),this.getHeight());
         
     }//GEN-LAST:event_rbRojoActionPerformed
 
+    /**
+     * Pone el color del panel azul
+     * @param evt 
+     */
     private void rbAzulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbAzulActionPerformed
         g.setColor(Color.blue);
         g.fillRect(0,0,this.getWidth(),this.getHeight());
     }//GEN-LAST:event_rbAzulActionPerformed
 
+    /**
+     * Pone el color del panel amarillo
+     * @param evt 
+     */
     private void rbAmarilloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbAmarilloActionPerformed
         g.setColor(Color.yellow);
         g.fillRect(0,0,this.getWidth(),this.getHeight());
     }//GEN-LAST:event_rbAmarilloActionPerformed
 
+    /**
+     * Nos muestra una ventana con todos los colores para elegir nosotros el que queramos
+     * @param evt 
+     */
     private void rbPersonalizadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbPersonalizadoActionPerformed
         Color ventana = JColorChooser.showDialog(this,"Seleccione un color", Color.white);
         
         pColoreado.setBackground(ventana);
     }//GEN-LAST:event_rbPersonalizadoActionPerformed
 
+    /**
+     * Botón que nos muestra una ventana de información
+     * @param evt 
+     */
     private void miInformacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miInformacionActionPerformed
         
         String icono="<html><body><p><img src=https://eliademy.com/extimg/7c18aafa32_course_logo.jpg></img></p></body></html>";
