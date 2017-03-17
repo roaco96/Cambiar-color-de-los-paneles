@@ -196,14 +196,19 @@ public class Pantalla extends javax.swing.JFrame {
      */
     private void miInformacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miInformacionActionPerformed
         
-        String icono="<html><body><p><img src=https://eliademy.com/extimg/7c18aafa32_course_logo.jpg></img></p></body></html>";
+        String icono="<html>"
+                + "<body>"
+                +"<p><strong>Alumno:</strong> Manuel Muñoz Rodríguez</p>"
+                +"<p><strong>Curso:</strong> 2016-2017</p>"
+                +"<p><strong>Reto:</strong> Ejercicio de clase III-Tema 8</p>"
+                +"<p><strong>PONIENTE FORMACIÓN</strong></p>"
+                + "<p>"
+                + "<img src=https://eliademy.com/extimg/7c18aafa32_course_logo.jpg></img>"
+                + "</p>"
+                + "</body>"
+                + "</html>";
         
-        JOptionPane.showMessageDialog(this, 
-        "Alumno: Manuel Muñoz Rodríguez"
-                + "\nCurso: 2016-2017"
-                + "\nReto: Ejercicio de clase III-Tema 8"
-                + "\nPONIENTE FORMACIÓN"
-                +"\n"+icono);
+        JOptionPane.showMessageDialog(this, icono);
         
         
     }//GEN-LAST:event_miInformacionActionPerformed
